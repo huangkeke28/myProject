@@ -29,6 +29,7 @@ public class DictionaryTagDAO {
                 DictionaryTag tag = new DictionaryTag();
                 tag.setDictionaryTagKey(rs.getString("dictionary_tag_key"));
                 tag.setDictionaryTagValue(rs.getString("dictionary_tag_value"));
+                list.add(tag);
             }
         } catch (Exception e) {
             throw new RuntimeException("查询数据字典标签出错",e);
